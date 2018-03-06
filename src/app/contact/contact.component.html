@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-lg-12" style="max-width: 1200px;">
+            <section>
+                <header style="margin: 1rem;">
+                    <h2>Lämna dina synpunkter här!</h2>
+                </header>
+                <div class="form-group" style="margin: 1rem;">      
+                    <form>
+                        <p>
+                            <label>
+                                <span>Rubrik</span>
+                            </label>
+                            <input type="text"
+                            placeholder="Rubrik"
+                            class="form-control">
+                        </p>
+                        <div>
+                            <p>Beskrivning
+                                <textarea id=textarea
+                                    maxLength="100"
+                                    class="form-control">    
+                                </textarea>
+                                Max 100 tecken
+                            </p> 
+                        </div>
+                        <div class="Errand">
+                            <label>Ärende</label>
+                            <select class="form-control">
+                                <option>Strand</option>
+                                <option>Kanot</option>
+                                <option>Vattenpark</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>
+                                Vill du få svar på din synpunkt?
+                            </label>
+                            <div>
+                                <label for="pov_ja">Ja</label>
+                                <input type="radio"
+                                        value="yes"
+                                        name="synpunkt"
+                                        id="pov_ja">
+                                <label for ="pov_nej">Nej</label>
+                                <input type="radio"
+                                        value="no"
+                                        name="synpunkt"
+                                        id="pov_nej">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                <label>
+                                    <span>Email</span>
+                                </label>
+                                <input type="text"
+                                        placeholder="example@email.com"
+                                        class="form-control">
+                            </p>
+                        </div>
+                        <button class="btn btn-danger" type="submit" style="margin-bottom: 1rem;">Skicka</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

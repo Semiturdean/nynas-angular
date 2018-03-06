@@ -1,0 +1,74 @@
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-5 order-md-2 offset-1 col-10">
+                <section class="Aside" style="margin-top: 1rem;">
+                    <h2>Vädret på Nicksta</h2>
+                        <div>
+                            <table class="table" id="weather">
+                                <thead class="bg-dark">
+                                    <tr>
+                                        <th>Klocka</th>
+                                        <th>Väder</th>
+                                        <th>Värme</th>
+                                        <th>Vind</th>
+                                     </tr>
+                                </thead>
+                    
+                                <tbody class="weatherTable">
+                                    <tr *ngFor="let weatherStamp of weatherData">
+                                        <td>
+                                            {{ weatherStamp.clock }}
+                                        </td>
+                                        <td>
+                                            {{ weatherStamp.description }}
+                                        </td>
+                                        <td>
+                                            {{ weatherStamp.temperature }}
+                                        </td>
+                                        <td>
+                                            {{ weatherStamp.wind }}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                             </table>
+                        </div>
+                </section>
+            </div>
+            <div class="col-md-5 order-md-1 offset-1 col-10">
+                <section class="Content">
+                    <h2 style="margin: 1rem;">Åker tågen?</h2>
+                    <div class="form-group" style="margin: 1rem;">    
+                        <form>
+                            <p>
+                                <label>
+                                    <span>Jag åker ifrån..</span>
+                                </label>
+                                <input type="text"
+                                    class="form-control"
+                                            id="input">
+                            </p>
+                        </form>
+                    </div>
+                    <button type="submit" class="btn btn-danger" id="searchTrains" style="margin-bottom: 1rem; margin-left: 1rem;">Sök..</button>
+                    <div>
+                        <table class="table">
+                            <caption style="margin-left: 1rem" id="output"></caption>
+                            <thead class="bg-dark">
+                                <tr>
+                                    <th>Nr</th>
+                                    <th>Avgår</th>
+                                    <th>Ankommer</th>
+                                </tr>
+                            </thead>
+                            <tbody class="trainTable">
+            
+                             </tbody>
+                        </table>
+                        <p style="margin-left: 1rem;">Inga problem i trafiken</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
